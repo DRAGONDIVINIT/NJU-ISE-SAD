@@ -52,7 +52,11 @@ final class CliParsers {
             return null;
         }
         try {
-            return Integer.parseInt(token);
+            int value = Integer.parseInt(token);
+            if (value < 0) {
+                return null;
+            }
+            return value;
         } catch (NumberFormatException e) {
             return null;
         }
