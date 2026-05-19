@@ -46,4 +46,15 @@ final class CliParsers {
         }
         return parts;
     }
+
+    static Integer parseSize(String token) {
+        if (token == null || token.isEmpty()) {
+            return null;
+        }
+        try {
+            return Integer.parseInt(token);
+        } catch (NumberFormatException e) {
+            return null;
+        }
+    }
 }

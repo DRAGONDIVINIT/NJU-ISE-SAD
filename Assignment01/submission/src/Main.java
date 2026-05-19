@@ -1,6 +1,5 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.List;
 
 public class Main {
 
@@ -23,7 +22,10 @@ public class Main {
                 }
             } else if ("TOUCH".equals(cmd)) {
                 if (tokens.length >= 3) {
-                    fs.touch(tokens[1], Integer.parseInt(tokens[2]));
+                    Integer size = CliParsers.parseSize(tokens[2]);
+                    if (size != null) {
+                        fs.touch(tokens[1], size);
+                    }
                 }
             } else if ("LS".equals(cmd)) {
                 if (tokens.length >= 2) {
