@@ -1,0 +1,7 @@
+MKDIR /real
+TOUCH /real/a.txt 10
+LINK /real /view
+LS /view
+TOUCH /view/b.txt 5
+LS /real
+INFO /view

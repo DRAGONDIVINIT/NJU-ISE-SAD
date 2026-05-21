@@ -1,0 +1,10 @@
+MKDIR /usr
+MKDIR //usr///local
+TOUCH /usr/local/./a.txt 10
+TOUCH /usr/local/../b.txt 5
+LINK /usr/local /alias
+LS /
+INFO /
+FIND / a.txt
+RM /alias
+LS /

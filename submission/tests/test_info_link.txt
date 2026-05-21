@@ -1,0 +1,7 @@
+MKDIR /data
+TOUCH /data/a 10
+TOUCH /data/b 20
+LINK /data /alias
+INFO /data
+INFO /alias
+INFO /

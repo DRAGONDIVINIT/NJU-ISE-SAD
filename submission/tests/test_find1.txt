@@ -1,0 +1,7 @@
+MKDIR /src
+MKDIR /src/main
+MKDIR /src/test
+TOUCH /src/main/App.java 10
+TOUCH /src/test/App.java 20
+TOUCH /src/test/Helper.java 5
+FIND /src App.java

@@ -1,0 +1,8 @@
+TOUCH /x 5
+LINK /x /y
+INFO /
+TOUCH /y 30
+INFO /
+MKDIR /y
+LS /
+INFO /

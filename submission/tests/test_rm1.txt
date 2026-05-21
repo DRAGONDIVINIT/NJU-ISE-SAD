@@ -1,0 +1,7 @@
+MKDIR /tmp
+TOUCH /tmp/a.bin 7
+LS /tmp
+RM /tmp/a.bin
+LS /tmp
+RM /tmp
+LS /
